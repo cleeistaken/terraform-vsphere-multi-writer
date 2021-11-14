@@ -1,2 +1,4 @@
-# terraform-vsphere-multi-writer-
-Deploy VM with shared disk on vSAN using Terraform
+# terraform-vsphere-multi-writer
+Sample code to deploy VM with shared disk on vSAN using Terraform.
+
+
