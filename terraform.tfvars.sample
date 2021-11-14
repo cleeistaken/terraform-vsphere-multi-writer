@@ -1,0 +1,61 @@
+#
+# vCenter Server Configuration
+#
+vcenter_server       = "vc.home.lab"
+vcenter_user         = "administrator@vsphere.local"
+vcenter_password     = "VMware1!"
+vcenter_insecure_ssl = true
+
+#
+# vSphere Configuration
+#
+vsphere_datacenter_str                 = "Datacenter"
+vsphere_compute_cluster_str            = "Cluster"
+vsphere_resource_pool_str              = "ResourcePool"
+vsphere_datastore_str                  = "vsanDatastore"
+vsphere_storage_policy_str             = "vSAN Default Storage Policy"
+vsphere_distributed_virtual_switch_str = "DSwitch"
+vsphere_network_str                    = "DPortGroup"
+
+#
+# Template
+#
+content_library_name = "Test Content Library"
+content_library_description = ""
+content_library_item_name = "Photon 4.0"
+content_library_item_description = "VMware Photon 4.0 OVA with virtual hardware v11"
+content_library_item_url = "https://packages.vmware.com/photon/4.0/Rev1/ova/photon-ova-4.0-ca7c9e9330.ova"
+
+#
+# Network Configuration
+#
+network_domain_str           = "home.lab"
+network_dns_suffix_list      = ["home.lab"]
+network_ipv4_subnet_str      = "192.168.100.0/24"
+network_ipv4_subnet_gw_str   = "192.168.100.254"
+network_ipv4_dns_list        = ["8.8.8.8", "8.8.4.4"]
+network_ipv4_subnet_ips_list = [
+    "192.168.100.1",
+    "192.168.100.2",
+    "192.168.100.3",
+    "192.168.100.4",
+    "192.168.100.5",
+    "192.168.100.6",
+    "192.168.100.7",
+    "192.168.100.8",
+  ]
+
+#
+# VM
+#
+vm_prefix_str = "testvm"
+vm_count = 3
+vm_cpu = 2
+vm_memory_gb = 4
+vm_os_disk_gb = 16 # This is the default size of the Photon VM disk
+vm_data_disk_count = 2
+vm_data_disk_gb = 40
+
+#
+# EOF
+#
